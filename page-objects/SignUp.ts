@@ -12,6 +12,7 @@ export class SignUpPage {
   readonly address: Locator;
   readonly state: Locator;
   readonly city: Locator;
+
   readonly mobileNumber: Locator;
 
   constructor(page: Page) {
