@@ -11,6 +11,7 @@ export class SignUpPage {
   readonly lastName: Locator;
   readonly address: Locator;
   readonly state: Locator;
+
   readonly city: Locator;
 
   readonly mobileNumber: Locator;
@@ -21,6 +22,7 @@ export class SignUpPage {
     this.pageBar = page.getByText('AutomationExercise Full-').first();
     this.nameUser = page.getByRole('textbox', { name: 'Name' });
     this.emailUser = page
+
       .locator('form')
       .filter({ hasText: 'Signup' })
       .getByPlaceholder('Email Address');
